@@ -11,4 +11,4 @@ select * from books;
 select distinct author_lname from books;
 select author_fname,author_lname from books;
 select distinct concat(author_fname,author_lname) from books;
-select distinct author_fname as 'namem',author_lname as name from books;
+select distinct author_fname as 'namem',author_lname as name ,title from books;
