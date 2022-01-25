@@ -1,0 +1,5 @@
+select emp_id, emp_name, dept_name, salary
+from (
+select *, row_number() over (order by emp_id desc) as ass 
+from employee) aa
+where aa.ass= 2;
